@@ -10,8 +10,13 @@ Future<void> main() async {
   // select the firebase project. import "firebase_options.dart"
   // Close and open the IDE again
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+      options: FirebaseOptions(
+          apiKey: "AIzaSyA9xQ17iDNXXoihbu1EtB3BKyDcyi-rcUo",
+          authDomain: "login-sample-20335.firebaseapp.com",
+          projectId: "login-sample-20335",
+          storageBucket: "login-sample-20335.appspot.com",
+          messagingSenderId: "649556311448",
+          appId: "1:649556311448:web:75f7e88cedc0efe3eb7fed"));
   runApp(const MyApp());
 }
 
